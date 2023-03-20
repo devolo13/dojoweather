@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DojoWeather</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <h1>Dojo Weather</h1>
+        <div>
+          <button class="cityButton" onclick="city()">Burbank</button>
+          <button class="cityButton" onclick="city()">Chicago</button>
+          <button class="cityButton" onclick="city()">Dallas</button>
+        </div>
+      </header>
+      <div class="weatherPage">
+        <div class="contentHeader">
+          <h2>San Jose</h2>
+          <div class="showTemp">
+            <p>show temperature in</p>
+            <select
+              name="tempSelect"
+              id="tempSelect"
+              onchange="metricConversion(this)"
+            >
+              <option value="celsius">°C</option>
+              <option value="fahrenheit">°F</option>
+            </select>
+          </div>
+        </div>
+        <hr/>
+        <div class="individualWeatherBlocks">
+          <div class="singleDayWeather">
+            <h3>Today</h3>
+            <img src="assets/some_rain.png" alt="rainy clouds icon" />
+            <p>some rain</p>
+            <div class="dailyTemps">
+              <div class="highTemp"><span id="todaysHigh">24</span>°</div>
+              <div class="lowTemp"><span id="todaysLow">18</span>°</div>
+            </div>
+          </div>
+          <div class="singleDayWeather">
+            <h3>Tomorrow</h3>
+            <img src="assets/some_sun.png" alt="sun icon" />
+            <p>some sun</p>
+            <div class="dailyTemps">
+              <div class="highTemp"><span id="tomorrowsHigh">27</span>°</div>
+              <div class="lowTemp"><span id="tomorrowsLow">19</span>°</div>
+            </div>
+          </div>
+          <div class="singleDayWeather">
+            <h3>Friday</h3>
+            <img src="assets/some_clouds.png" alt="cloud icon" />
+            <p>some clouds</p>
+            <div class="dailyTemps">
+              <div class="highTemp"><span id="fridaysHigh">21</span>°</div>
+              <div class="lowTemp"><span id="fridaysLow">16</span>°</div>
+            </div>
+          </div>
+          <div class="singleDayWeather">
+            <h3>Saturday</h3>
+            <img src="assets/some_sun.png" alt="sun icon" />
+            <p>some sun</p>
+            <div class="dailyTemps">
+              <div class="highTemp"><span id="saterdaysHigh">26</span>°</div>
+              <div class="lowTemp"><span id="saterdaysLow">21</span>°</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cookie">
+        <img src="assets/cookie.png" alt="cookie icon" />
+        <div>
+          <h5>Stop! Cookie time</h5>
+          <p>
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media features and to analyze our
+            traffic. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Read more...</a>
+          </p>
+        </div>
+        <button onclick="dismissCookie()">I Accept</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

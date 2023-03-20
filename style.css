@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* HEADER */
+header{
+  padding: 20px 100px;
+  color: white;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 0px 20px;
+}
+/* CITY HEADER AND UNIT SELECT */
+.weatherPage{
+  margin: 20px 100px;
+}
+.contentHeader{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.showTemp{
+  display: flex;
+  align-items: center;
+}
+.showTemp p{
+  margin-right: 6px;
+}
+/* INDIVIDUAL DAYS */
+.individualWeatherBlocks{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  text-align: center;
+}
+.individualWeatherBlocks img{
+  border-radius: 50%;
+  width: 100px;
+  margin: 10px 0px;
+}
+.singleDayWeather{
+  background-color: lightgrey;
+  padding: 20px;
+}
+.highTemp{
+  color: red;
+}
+.dailyTemps{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.lowTemp{
+  color: blue;
+}
+/* COOKIE BOX */
+.cookie{
+  background-color: lightgrey;
+  position: fixed;
+  bottom: 20px;
+  left: 100px;
+  border: 2px black solid;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: calc(100% - 244px);
+}
+.cookie img{
+  margin-right:20px;
+}
+.cookie button{
+  color: black;
+  background-color: lightblue;
+  border: 3px solid black;
+  box-shadow: 2px 2px black;
+  padding: 5px;
+  width: 110px;
+  margin-left: 20px;
+}
